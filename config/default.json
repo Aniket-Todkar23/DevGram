@@ -1,4 +1,7 @@
 {
     "mongoURI":"mongodb+srv://anikett23:anikett23@devconnector.huxxgif.mongodb.net/?retryWrites=true&w=majority&appName=devConnector",
-    "jwtSecret":"mysecrettoken"
+    "jwtSecret":"mysecrettoken",
+    "githubClientId":"Ov23liNmfbFHiCxNPiit",
+    "githubSecret":"dad33802957d0640a82ba02270f494c89da31449"
+
 }
