@@ -25,7 +25,7 @@ const limiter = rateLimit({
 const cors = require('cors');
 
 app.use(cors({
-  origin: ['https://your-frontend-domain.vercel.app'], // or '*' during testing
+  origin: ['https://dev-gram-front-ix9h.vercel.app'], // or '*' during testing
   credentials: true
 }));
 
