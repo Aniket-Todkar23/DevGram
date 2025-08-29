@@ -1,18 +1,23 @@
-const mongoose=require('mongoose');
-const config=require('config');
-const db=config.get('mongoURI');
+const mongoose = require("mongoose");
+require("dotenv").config();      // just load env
+const config = require("config"); // import config package
 
-const connectDB= async ()=>{
-    try{
-        await mongoose.connect(db);
-        
-        console.log("MongoDB connected...");
-    }
-    catch(err){
-        console.error(err.message);
+const db = config.get("mongoURI"); // from custom-environment-variables.json
+console.log("DB URI:", db);
+const connectDB = async () => {
+  try {
+    
 
-        process.exit(1);
-    }
-}
+    await mongoose.connect(db, {
+    //   useNewUrlParser: true,
+    //   useUnifiedTopology: true,
+    });
+    
+    console.log("MongoDB connected...");
+  } catch (err) {
+    console.error(err.message);
+    process.exit(1);
+  }
+};
 
-module.exports=connectDB;
+module.exports = connectDB;
