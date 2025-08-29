@@ -14,7 +14,7 @@ app.use(express.json({ extended: false }));
 
 // enable CORS
 app.use(cors({
-  origin: ['https://dev-gram-front-ix9h.vercel.app'], // replace with your Vercel domain
+  origin: ['https://devgram-one.vercel.app'], // replace with your Vercel domain
   credentials: true
 }));
 
